@@ -7,7 +7,7 @@ include {extract} from './processes/extract'
 
 
 workflow {
-  File outpath = new File(params.result)
+  File outpath = new File(params.output)
   if (!outpath.exists())
     outpath.mkdirs()
   Channel.fromPath(params.input) | extract | FT 

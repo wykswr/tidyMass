@@ -13,6 +13,6 @@ process FT {
 
   cd treespace
 
-  cp * ${params.result}
+  cp * ${params.output}
   """
 }
